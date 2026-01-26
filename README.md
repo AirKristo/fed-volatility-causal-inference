@@ -66,7 +66,7 @@ scipy>=1.10.0
 
 ## Usage
 ```bash
-# Fetch price data
+# Get price data
 python src/data/get_prices.py
 
 # Build event panel
