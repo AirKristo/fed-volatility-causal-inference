@@ -42,8 +42,7 @@ def plot_event_study(avg):
     ax.plot(avg.index, avg["Treatment"], marker="o", linewidth=2, label="Treatment (XLF, XLRE)")
     ax.plot(avg.index, avg["Control"], marker="s", linewidth=2, label="Control (XLP, XLV)")
 
-    ax.axvline(x=0, color="red", linestyle="--", alpha=0.5, label="FOMC Announcement")
-    ax.axvline(x=-0.5, color="gray", linestyle=":", alpha=0.5)  # Pre/post boundary
+    ax.axvline(x=-0.5, color="red", linestyle="--", alpha=0.7, label="FOMC Announcement")
 
     ax.set_xlabel("Days Relative to FOMC Announcement")
     ax.set_ylabel("Average Absolute Return")
